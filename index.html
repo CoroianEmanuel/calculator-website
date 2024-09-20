@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator-App Web</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="calculator">
+            <form>
+                <div class="display">
+                    <input id="screen" type="text" name="display">
+                </div>
+                <div class="first-row">
+                    <input type="button" value="AC" onclick="toDelete()">
+                    <input type="button" value="+/-" onclick="minus()">
+                    <input type="button" value="%" onclick="toDisplaySymbol('%')">
+                    <input type="button" value="/" onclick="toDisplaySymbol('/')">
+                </div>
+                <div class="second-row">
+                    <input type="button" value="7" onclick="toDisplay(7)">
+                    <input type="button" value="8" onclick="toDisplay(8)">
+                    <input type="button" value="9" onclick="toDisplay(9)">
+                    <input type="button" value="x" onclick="toDisplaySymbol('*')">
+                </div>
+                <div class="third-row">
+                    <input type="button" value="4" onclick="toDisplay(4)">
+                    <input type="button" value="5" onclick="toDisplay(5)">
+                    <input type="button" value="6" onclick="toDisplay(6)">
+                    <input type="button" value="-" onclick="toDisplaySymbol('-')">
+                </div>
+                <div class="forth-row">
+                    <input type="button" value="1" onclick="toDisplay(1)">
+                    <input type="button" value="2" onclick="toDisplay(2)">
+                    <input type="button" value="3" onclick="toDisplay(3)">
+                    <input type="button" value="+" onclick="toDisplaySymbol('+')">
+                </div>
+                <div class="fifth-row">
+                    <input type="button" value="0" onclick="toDisplay(0)">
+                    <input type="button" value="," onclick="toDisplaySymbol('.')">
+                    <input type="button" value="=" onclick="result()">
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+<script src="script.js"></script>
+</body>
+</html>
